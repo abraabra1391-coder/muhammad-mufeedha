@@ -2070,26 +2070,6 @@
           <div class="detail-divider"></div>
         </div>
         <div class="family-grid">
-          <!-- Bride's family -->
-          <div class="family-card" data-fade>
-            <div class="family-role">Bride</div>
-            <div class="family-person-name">Mufeedha Musthafa</div>
-            <div class="family-parents">
-              <div class="family-parent-item">
-                <span
-                  style="font-size:9px;letter-spacing:.2em;text-transform:uppercase;color:var(--rose);font-family:var(--body);">Father</span>
-                <strong>Mr Musthafa</strong>
-              </div>
-              <div class="family-parent-item">
-                <span
-                  style="font-size:9px;letter-spacing:.2em;text-transform:uppercase;color:var(--rose);font-family:var(--body);">Mother</span>
-                <strong>Mrs Jaseela</strong>
-              </div>
-            </div>
-          </div>
-
-          <div class="family-amp">&amp;</div>
-
           <!-- Groom's family -->
           <div class="family-card" data-fade>
             <div class="family-role">Groom</div>
@@ -2104,6 +2084,26 @@
                 <span
                   style="font-size:9px;letter-spacing:.2em;text-transform:uppercase;color:var(--rose);font-family:var(--body);">Mother</span>
                 <strong>Mrs Aruva</strong>
+              </div>
+            </div>
+          </div>
+
+          <div class="family-amp">&amp;</div>
+
+          <!-- Bride's family -->
+          <div class="family-card" data-fade>
+            <div class="family-role">Bride</div>
+            <div class="family-person-name">Mufeedha Musthafa</div>
+            <div class="family-parents">
+              <div class="family-parent-item">
+                <span
+                  style="font-size:9px;letter-spacing:.2em;text-transform:uppercase;color:var(--rose);font-family:var(--body);">Father</span>
+                <strong>Mr Musthafa</strong>
+              </div>
+              <div class="family-parent-item">
+                <span
+                  style="font-size:9px;letter-spacing:.2em;text-transform:uppercase;color:var(--rose);font-family:var(--body);">Mother</span>
+                <strong>Mrs Jaseela</strong>
               </div>
             </div>
           </div>
@@ -2180,8 +2180,8 @@
        ============================================================ */
     window.WEDDING_CONFIG = {
       couple: {
-        brideName: "Mufeedha Musthafa",
         groomName: "Muhammed Azeez",
+        brideName: "Mufeedha Musthafa",
         monogram: "A&M",
         tagline: "Reserve This Day"
       },
@@ -2244,7 +2244,7 @@
       if (mapLinkEl) mapLinkEl.href = CFG.event.googleMapsUrl;
       const mapLink2 = document.getElementById('mapLink2');
       if (mapLink2) mapLink2.href = "https://maps.app.goo.gl/bekgX2tap8EV7oRT8";
-      document.title = CFG.couple.brideName + " & " + CFG.couple.groomName + " — " + CFG.couple.tagline;
+      document.title = CFG.couple.groomName + " & " + CFG.couple.brideName + " — " + CFG.couple.tagline;
 
       /* ---------------- countdown (hero + card) ---------------- */
       const target = new Date(CFG.event.dateISO).getTime();
